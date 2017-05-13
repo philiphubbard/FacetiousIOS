@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FacetiousIOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SCamera/SCamera.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SGL/SGL.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SUtility/SUtility.xcodeproj">
+   </FileRef>
+</Workspace>

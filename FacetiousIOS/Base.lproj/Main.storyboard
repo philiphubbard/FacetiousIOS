@@ -1,26 +1,73 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IEk-r5-KMN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--GLKit View Controller-->
+        <scene sceneID="FjC-So-dsY">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <glkViewController preferredFramesPerSecond="30" id="IEk-r5-KMN" customClass="ViewController" customModule="FacetiousIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="e1w-li-cJ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="3J3-pG-Uos"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="tQc-JE-ryf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="TEq-8c-wDF">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem image="Flip Camera" id="HZg-hC-xaQ">
+                                        <connections>
+                                            <action selector="handleFlipButton:" destination="IEk-r5-KMN" id="tji-ie-Enb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sHY-z5-7Qv"/>
+                                    <barButtonItem image="Lighting" id="QuM-AV-9Kr">
+                                        <connections>
+                                            <action selector="handleLightingButton:" destination="IEk-r5-KMN" id="ZmI-Mt-atN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Front Camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBe-by-GOw">
+                                <rect key="frame" x="104" y="635" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GBe-by-GOw" firstAttribute="leading" secondItem="tQc-JE-ryf" secondAttribute="leadingMargin" constant="88" id="K8k-cp-9Vg"/>
+                            <constraint firstItem="TEq-8c-wDF" firstAttribute="centerY" secondItem="GBe-by-GOw" secondAttribute="centerY" id="OjR-3O-rnU"/>
+                            <constraint firstAttribute="trailing" secondItem="TEq-8c-wDF" secondAttribute="trailing" id="ROQ-7z-aWR"/>
+                            <constraint firstItem="TEq-8c-wDF" firstAttribute="centerX" secondItem="GBe-by-GOw" secondAttribute="centerX" id="ZcJ-r6-Eho"/>
+                            <constraint firstItem="TEq-8c-wDF" firstAttribute="leading" secondItem="tQc-JE-ryf" secondAttribute="leading" id="abU-9U-EPS"/>
+                            <constraint firstItem="TEq-8c-wDF" firstAttribute="bottom" secondItem="3J3-pG-Uos" secondAttribute="top" id="xhE-5Z-Wff"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="IEk-r5-KMN" id="mc1-D2-OEC"/>
+                        </connections>
+                    </glkView>
+                    <connections>
+                        <outlet property="whichCameraLabel" destination="GBe-by-GOw" id="hGW-bg-Gn7"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2m-FH-ItI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-621.60000000000002" y="100.29985007496252"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Flip Camera" width="44" height="44"/>
+        <image name="Lighting" width="44" height="44"/>
+    </resources>
 </document>

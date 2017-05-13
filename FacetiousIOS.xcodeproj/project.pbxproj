@@ -12,7 +12,32 @@
 		D324608B1EB6569E00D0FA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32460891EB6569E00D0FA7A /* Main.storyboard */; };
 		D324608D1EB6569E00D0FA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324608C1EB6569E00D0FA7A /* Assets.xcassets */; };
 		D32460901EB6569E00D0FA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D324608E1EB6569E00D0FA7A /* LaunchScreen.storyboard */; };
+		D324609B1EB658A200D0FA7A /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D32460971EB658A200D0FA7A /* defaultImage.png */; };
+		D324609C1EB658A200D0FA7A /* LuminanceWarpingVertexShaderPNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32460981EB658A200D0FA7A /* LuminanceWarpingVertexShaderPNT.swift */; };
+		D324609D1EB658A200D0FA7A /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32460991EB658A200D0FA7A /* Renderer.swift */; };
+		D324609E1EB658A200D0FA7A /* VideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324609A1EB658A200D0FA7A /* VideoHandler.swift */; };
+		D32460A11EB6590D00D0FA7A /* SCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32460A01EB6590D00D0FA7A /* SCamera.framework */; };
+		D32460A31EB6591100D0FA7A /* SGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32460A21EB6591100D0FA7A /* SGL.framework */; };
+		D32460A51EB6591400D0FA7A /* SUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32460A41EB6591400D0FA7A /* SUtility.framework */; };
+		D32460A81EB6597400D0FA7A /* SCamera.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D32460A71EB6597400D0FA7A /* SCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D32460AA1EB6597800D0FA7A /* SGL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D32460A91EB6597800D0FA7A /* SGL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D32460AC1EB6597C00D0FA7A /* SUtility.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D32460AB1EB6597C00D0FA7A /* SUtility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D32460A61EB6596800D0FA7A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D32460A81EB6597400D0FA7A /* SCamera.framework in CopyFiles */,
+				D32460AA1EB6597800D0FA7A /* SGL.framework in CopyFiles */,
+				D32460AC1EB6597C00D0FA7A /* SUtility.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D32460821EB6569E00D0FA7A /* FacetiousIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacetiousIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +47,16 @@
 		D324608C1EB6569E00D0FA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D324608F1EB6569E00D0FA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D32460911EB6569E00D0FA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32460971EB658A200D0FA7A /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
+		D32460981EB658A200D0FA7A /* LuminanceWarpingVertexShaderPNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuminanceWarpingVertexShaderPNT.swift; sourceTree = "<group>"; };
+		D32460991EB658A200D0FA7A /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		D324609A1EB658A200D0FA7A /* VideoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoHandler.swift; sourceTree = "<group>"; };
+		D32460A01EB6590D00D0FA7A /* SCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCamera.framework; path = "../SCamera/build/Debug-iphoneos/SCamera.framework"; sourceTree = "<group>"; };
+		D32460A21EB6591100D0FA7A /* SGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGL.framework; path = "../SGL/build/Debug-iphoneos/SGL.framework"; sourceTree = "<group>"; };
+		D32460A41EB6591400D0FA7A /* SUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SUtility.framework; path = "../SUtility/build/Debug-iphoneos/SUtility.framework"; sourceTree = "<group>"; };
+		D32460A71EB6597400D0FA7A /* SCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32460A91EB6597800D0FA7A /* SGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32460AB1EB6597C00D0FA7A /* SUtility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SUtility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32460A11EB6590D00D0FA7A /* SCamera.framework in Frameworks */,
+				D32460A31EB6591100D0FA7A /* SGL.framework in Frameworks */,
+				D32460A51EB6591400D0FA7A /* SUtility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +76,12 @@
 		D32460791EB6569E00D0FA7A = {
 			isa = PBXGroup;
 			children = (
+				D32460AB1EB6597C00D0FA7A /* SUtility.framework */,
+				D32460A91EB6597800D0FA7A /* SGL.framework */,
+				D32460A71EB6597400D0FA7A /* SCamera.framework */,
 				D32460841EB6569E00D0FA7A /* FacetiousIOS */,
 				D32460831EB6569E00D0FA7A /* Products */,
+				D324609F1EB6590D00D0FA7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +97,27 @@
 			isa = PBXGroup;
 			children = (
 				D32460851EB6569E00D0FA7A /* AppDelegate.swift */,
+				D32460981EB658A200D0FA7A /* LuminanceWarpingVertexShaderPNT.swift */,
+				D32460991EB658A200D0FA7A /* Renderer.swift */,
+				D324609A1EB658A200D0FA7A /* VideoHandler.swift */,
 				D32460871EB6569E00D0FA7A /* ViewController.swift */,
 				D32460891EB6569E00D0FA7A /* Main.storyboard */,
+				D32460971EB658A200D0FA7A /* defaultImage.png */,
 				D324608C1EB6569E00D0FA7A /* Assets.xcassets */,
 				D324608E1EB6569E00D0FA7A /* LaunchScreen.storyboard */,
 				D32460911EB6569E00D0FA7A /* Info.plist */,
 			);
 			path = FacetiousIOS;
+			sourceTree = "<group>";
+		};
+		D324609F1EB6590D00D0FA7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D32460A41EB6591400D0FA7A /* SUtility.framework */,
+				D32460A21EB6591100D0FA7A /* SGL.framework */,
+				D32460A01EB6590D00D0FA7A /* SCamera.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +130,7 @@
 				D324607E1EB6569E00D0FA7A /* Sources */,
 				D324607F1EB6569E00D0FA7A /* Frameworks */,
 				D32460801EB6569E00D0FA7A /* Resources */,
+				D32460A61EB6596800D0FA7A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -127,6 +184,7 @@
 				D32460901EB6569E00D0FA7A /* LaunchScreen.storyboard in Resources */,
 				D324608D1EB6569E00D0FA7A /* Assets.xcassets in Resources */,
 				D324608B1EB6569E00D0FA7A /* Main.storyboard in Resources */,
+				D324609B1EB658A200D0FA7A /* defaultImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D324609D1EB658A200D0FA7A /* Renderer.swift in Sources */,
+				D324609E1EB658A200D0FA7A /* VideoHandler.swift in Sources */,
+				D324609C1EB658A200D0FA7A /* LuminanceWarpingVertexShaderPNT.swift in Sources */,
 				D32460881EB6569E00D0FA7A /* ViewController.swift in Sources */,
 				D32460861EB6569E00D0FA7A /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +367,7 @@
 				D32460961EB6569E00D0FA7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
