@@ -60,13 +60,14 @@ class ViewController: GLKViewController, UIGestureRecognizerDelegate {
         view.addGestureRecognizer(doubleTapGestureRecognizer)
     }
     
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+
         // The following idiom seems to be the best way to respond to a change in the device
         // orientation (portrait, landscape), so the camera can be put into the matching
         // orientation.
         
-        super.willTransition(to: newCollection, with: coordinator)
+        super.viewWillTransition(to: size, with: coordinator)
+
         coordinator.animate(alongsideTransition: nil) { _ in
             let deviceOrientation = UIDevice.current.orientation
             switch deviceOrientation {
